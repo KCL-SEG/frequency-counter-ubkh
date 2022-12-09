@@ -5,9 +5,8 @@ def frequencies(items):
     frequencies = {}
     # Your code goes here
     for item in items:
-        key = str(item) if not isinstance(item, str) else item
-        if key in frequencies:
-            frequencies[key] += 1
+        if item in frequencies:
+            frequencies[item] += 1
         else:
-            frequencies[key] = 1
+            frequencies[item] = 1
     return frequencies
